@@ -22,6 +22,6 @@ public class AdminRouteController {
     @RequestMapping(value = "/adminRoutes", method = RequestMethod.POST)
     public String AdminRoutePage(@Validated RouteDto form) {
         service.AdminRoute(form);
-        return "Success";
+        return "redirect:/routes";
     }
 }

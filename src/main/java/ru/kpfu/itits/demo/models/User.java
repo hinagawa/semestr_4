@@ -22,7 +22,7 @@ public class User {
     @Size(max = 20, min = 3, message = "Имя должно быть от 3 до 20 символов")
     @NotEmpty(message = "Введите имя")
     private String name;
-    @Email
+    @Email(message = "Email выглядит не оч")
     private String email;
     private String hash_password;
     @Enumerated(value= EnumType.STRING)

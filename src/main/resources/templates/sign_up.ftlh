@@ -121,38 +121,6 @@
             transition: all .4s ease-in-out;
         }
 
-        .backArrow{
-            border-radius: 50%;
-            background-color: red;
-        }
-
-        .testButton{
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            z-index: 999;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: rgba(0,0,0,0.3);
-            cursor: pointer;
-            transition: transform .4s;
-        }
-
-        .testButton:hover{
-            background-color: rgba(0,0,0,0.5);
-        }
-
-        .leftArrow{
-            -webkit-user-select: none;
-            position: relative;
-            left: 10px;
-            top: 2px;
-
-            cursor: pointer;
-            transform: scale(-1, 1);
-            filter: invert(1);
-        }
 
 
 

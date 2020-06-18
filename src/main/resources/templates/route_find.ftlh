@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta.25/shoelace.css">
     <style>
         html{
-            background-color: darkcyan;
+            background-color: dodgerblue;
         }
     </style>
 </head>
@@ -35,10 +35,6 @@
 
 </table>
 
-<script
-        src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-        crossorigin="anonymous"></script>
 
 </body>
 </html>

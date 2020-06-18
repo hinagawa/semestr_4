@@ -8,61 +8,29 @@
     <title>Document</title>
     <style>
 
-        body, html, #map {
-            background-color: darkcyan;
+         #map {
             width: 100%;
-            height: 80%;
+            height: 90%;
             padding: 0;
             margin: 0;
             position: absolute;
         }
-        .search{
-            position:relative;
+
+        .mmap{
+            position: absolute;
+            top:38px;
+
         }
-        .search_result{
-            background: #FFF;
-            border: 1px #ccc solid;
-            width: 100px;
-            border-radius: 4px;
-            max-height:100px;
-            overflow-y:scroll;
-            display:none;
+        input{
+            height: 10px;
+            width:90%;
+
         }
-        .search_result li{
-            list-style: none;
-            padding: 5px 10px;
-            margin: 0 0 0 -40px;
-            color: #0896D3;
-            border-bottom: 1px #ccc solid;
-            cursor: pointer;
-            transition:0.3s;
-        }
-        .search_result li:hover{
-            background: #F9FF00;
-        }
-        .search{
-            position:relative;
-        }
-        .search_result{
-            background: #FFF;
-            border: 1px #ccc solid;
-            width: 100px;
-            border-radius: 4px;
-            max-height:100px;
-            overflow-y:scroll;
-            display:none;
-        }
-        .search_result li{
-            list-style: none;
-            padding: 5px 10px;
-            margin: 0 0 0 -40px;
-            color: #0896D3;
-            border-bottom: 1px #ccc solid;
-            cursor: pointer;
-            transition:0.3s;
-        }
-        .search_result li:hover{
-            background: #F9FF00;
+        button{
+            position: absolute;
+            top:0px;
+            left: 1380px;
+            width: 10%;
         }
     </style>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=cfc7b0b2-a407-468d-bfa3-4ccfe9aa0ab8&lang=ru_RU" type="text/javascript"></script>
@@ -76,7 +44,7 @@
 <button >Submit</button>
 
 </form>
-<div id="map">
+<div id="map" class="mmap">
 
 </div>
 
@@ -87,7 +55,7 @@
         function init() {
             var myPlacemark,
                 myMap = new ymaps.Map('map', {
-                    center: [55.753994, 37.622093],
+                    center: [55.796289, 49.108795],
                     zoom: 9
                 }, {
                     searchControlProvider: 'yandex#search'

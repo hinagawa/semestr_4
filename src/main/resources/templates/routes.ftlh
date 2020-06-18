@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta.25/shoelace.css">
 <style>
     html{
-        background-color: darkcyan;
+        background-color: dodgerblue;
     }
 </style>
 </head>
 <body>
+
 <table class="table-bordered" id="display">
     <tr>
         <th>Откуда</th>

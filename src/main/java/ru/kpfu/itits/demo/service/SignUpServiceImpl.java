@@ -7,6 +7,7 @@ import ru.kpfu.itits.demo.dto.SignUpDto;
 import ru.kpfu.itits.demo.models.Role;
 import ru.kpfu.itits.demo.models.User;
 import ru.kpfu.itits.demo.repository.UserRepository;
+
 @Component
 
 public class SignUpServiceImpl implements SignUpService {
@@ -17,14 +18,14 @@ public class SignUpServiceImpl implements SignUpService {
     private PasswordEncoder passwordEncoder;
     @Override
     public void signUp(SignUpDto form) {
-        System.out.println("SignUoService Impl");
-        User user= User.builder()
-                .email(form.getEmail())
-                .hash_password(passwordEncoder.encode(form.getPassword()))
-                .name(form.getName())
-                .role(Role.USER)
-                .build();
-        userRepository.save(user);
+            User user = User.builder()
+                    .email(form.getEmail())
+                    .hash_password(passwordEncoder.encode(form.getPassword()))
+                    .name(form.getName())
+                    .role(Role.USER)
+                    .build();
+            userRepository.save(user);
+
 
     }
 
